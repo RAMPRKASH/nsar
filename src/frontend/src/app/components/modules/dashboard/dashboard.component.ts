@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
   status2g =  {'Total': 450, 'Active': 380, 'Inactive': 20};
   status3g =  {'Total': 547, 'Active': 455, 'Inactive': 92};
   status4g =  {'Total': 40, 'Active': 48, 'Inactive': 1};
-  //checking for enitial commit
+  //checking for enitial commit 
  options: Highcharts.Options = {
     chart: {
       type: 'column'
