@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: nsar
+Implementation-Version: 0.1
+Built-By: Ram Prakash
+Implementation-Vendor-Id: com.nova
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/nsar
+Created-By: Maven Integration for Eclipse
+

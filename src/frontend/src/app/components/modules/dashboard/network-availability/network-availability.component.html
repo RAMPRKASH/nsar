@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+
+      <!-- <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover"></table> -->
+    <table datatable [dtOptions]="dtOptions" class="row-border hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>RNC Name</th>
+          <th>Site Name</th>
+          <th>Cell Name</th>
+          <th>Site Status</th>
+          <th>Sector Status</th>
+          <th>Cycle Time</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr *ngFor="let status of data">
+          <td>{{ status.id }}</td>
+          <td>{{ status.rncName }}</td>
+          <td>{{ status.siteName }}</td>
+          <td>{{ status.cellName }}</td>
+          <td>{{ status.status}}</td>
+          <td>{{ status.sectorStatus }}</td>
+          <td>{{ status.cycleTime }}</td>
+        </tr>
+        <tr *ngIf="persons?.length == 0">
+          <td colspan="3" class="no-data-available">No data!</td>
+        </tr> 
+      </tbody> 
+    </table>
+  </div>
+</div>

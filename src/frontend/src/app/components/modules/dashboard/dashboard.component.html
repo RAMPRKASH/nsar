@@ -1,0 +1,108 @@
+<script src="http://code.highcharts.com/modules/offline-exporting.js"></script>
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <a [routerLink]="['availability-status']"><span class="info-box-icon bg-aqua">2G<small><span class="glyphicon glyphicon-signal"></span></small></span>
+      </a>
+        <div class="info-box-content">
+      
+        <div class="row ">
+            
+            <div class="col-md-3 col-sm-6">
+              <b>Total</b> 
+                <hr><a>{{status2g.Total}}</a>
+            </div>
+              
+            <div class="col-md-3 col-sm-6">
+                  <b>Up</b>
+                  <hr><a>{{status2g.Active}}</a>
+            </div>
+           
+            <div class="col-md-3 col-sm-6">
+                  <b>Down</b>
+                  <hr><a>{{status2g.Inactive}}</a>
+            </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <a [routerLink]="['availability-status']"><span class="info-box-icon bg-aqua">3G<small><span class="glyphicon glyphicon-signal"></span></small></span>
+      </a>
+      <div class="info-box-content">
+        
+          <div class="row ">
+            
+              <div class="col-md-3 col-sm-6">
+                  <b>Total</b> 
+                    <hr><a>{{status3g.Total}}</a>
+                </div>
+                  
+                <div class="col-md-3 col-sm-6">
+                      <b>Up</b>
+                      <hr><a>{{status3g.Active}}</a>
+                </div>
+               
+                <div class="col-md-3 col-sm-6">
+                      <b>Down</b>
+                      <hr><a>{{status3g.Inactive}}</a>
+                </div>
+              
+            </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="clearfix visible-sm-block"></div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <a [routerLink]="['availability-status']"><span class="info-box-icon bg-aqua">4G<small><span class="glyphicon glyphicon-signal"></span></small></span>
+      </a>
+        <div class="info-box-content">
+       
+
+          <div class="row ">
+            
+              <div class="col-md-3 col-sm-6">
+                  <b>Total</b> 
+                    <hr><a>{{status4g.Total}}</a>
+                </div>
+                  
+                <div class="col-md-3 col-sm-6">
+                      <b>Up</b>
+                      <hr><a>{{status4g.Active}}</a>
+                </div>
+               
+                <div class="col-md-3 col-sm-6">
+                      <b>Down</b>
+                      <hr><a>{{status4g.Inactive}}</a>
+                </div>
+              
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- row for 2 network availabilty -->
+<div class="row">
+  <div class="col-md-4">
+    <div #chart2G>
+      chart 2G
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div #chart3G>
+      chart 3G
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div #chart4G>
+      chart 4G
+    </div>
+  </div>
+</div>

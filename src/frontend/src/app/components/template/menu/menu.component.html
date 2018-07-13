@@ -1,0 +1,78 @@
+<aside class="main-sidebar">
+  <section class="sidebar">
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="treeview">
+        <a href="#">
+          <i class="glyphicon glyphicon-inbox"></i>
+          <span>Network Component</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li>
+            <a>
+            <i class="fa fa-circle-o"></i>Switch</a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-circle-o"></i>Router</a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-circle-o"></i> Firewall</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="glyphicon glyphicon-signal"></i>
+          <span>Network Status</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li>
+            <a [routerLink]="['active']">
+            
+              <i class="fa fa-circle-o"></i> Active</a>
+          </li>
+          <li>
+            <a [routerLink]="['in-active']">
+              <i class="fa fa-circle-o"></i> In-active</a>
+          </li>
+          <li>
+            <a [routerLink]="['halted']">
+              <i class="fa fa-circle-o"></i> Halted</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-pie-chart"></i>
+          <span>KPI</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li>
+            <a [routerLink]="['bsc']">
+              <i class="fa fa-circle-o"></i> BSE</a>
+          </li>
+          <li>
+            <a [routerLink]="['rnc']">
+              <i class="fa fa-circle-o"></i> RNC</a>
+          </li>
+          <li>
+            <a [routerLink]="['lte']">
+              <i class="fa fa-circle-o"></i> LTE</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+</aside>
